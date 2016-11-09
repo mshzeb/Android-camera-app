@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btn_upload_picture_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_upload_pic_to"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="5dp"
+            android:drawableTop="@drawable/take_photo"
+            android:text="@string/btn_take_photo"
+            android:textColor="#DDDDDD"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/reoord_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/take_video"
+            android:layout_gravity="right|bottom"
+            android:layout_marginEnd="5dp"
+            android:paddingBottom="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/btn_record_video"
+            android:textColor="#DDDDDD"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/showGallery"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|bottom" />
+
+        <LinearLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|top"
+            >
+
+            <TextView
+                android:id="@+id/txtLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_saving_picture"
+                android:layout_gravity="center_horizontal|top"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top" />
+
+        </LinearLayout>
+
+        <!-- <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_saving_picture"
+            android:layout_gravity="center_horizontal|top"
+            android:paddingTop="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" /> -->
+    </FrameLayout> <!-- android:layout_weight="1" -->
+
+    <!-- <ImageButton
+        android:id="@+id/take_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Take Picture"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/take_photo_selector"
+        android:background="@null" /> -->
+
+</RelativeLayout>

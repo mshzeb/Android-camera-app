@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android Camera App</string>
+
+    <string name="content_description">Take Photo</string>
+    <string name="content_imageView">Image Preview</string>
+
+    <string name="showGallery">Show Gallery</string>
+
+    <string name="btn_take_photo">Take Photo</string>
+    <string name="btn_record_video">Record Video</string>
+
+    <string name="btn_upload_pic_to">Upload Picture To...</string>
+    <string name="txt_saving_picture">Saving Picture...</string>
+</resources>
